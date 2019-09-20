@@ -16,7 +16,7 @@ baseurl = "https://cgkang.github.io/"
 copyright = ""
 
 # Enable analytics by entering your Google Analytics tracking ID
-googleAnalytics = ""
+googleAnalytics = "UA-37229108-1"
 
 ############################
 ## Advanced options below ##
