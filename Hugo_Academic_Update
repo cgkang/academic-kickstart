@@ -1,0 +1,23 @@
+Hugo_Academic_Update
+
+academic import --bibtex ~/Downloads/ijgi-v08-i12_20191213.bib
+
+rm -f .git/index.lock
+rm -rf public
+
+git add .
+git commit -m "Initial commit"
+git push -u origin master
+
+git submodule add -f -b master https://github.com/cgkang/cgkang.github.io.git public
+
+
+git submodule update --init --recursive
+
+
+hugo
+cd public
+git add .
+git commit -m "Build website"
+git push origin master
+cd ..
